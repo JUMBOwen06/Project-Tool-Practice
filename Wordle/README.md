@@ -2,8 +2,6 @@
 Terminal-Based Word Guessing Game
 
 This project is a simple terminal-based clone of the Wordle game, built in Python.
-It focuses on implementing core game logic such as word evaluation, input validation,
-and game state management before adding any UI enhancements.
 
 This project is part of a series of smaller exercises designed to learn new Python
 libraries and strengthen programming fundamentals before integrating them into
@@ -29,8 +27,8 @@ Letters in the correct position are marked as correct and removed from considera
 Pass 2 — Present Letters
 Remaining letters are checked against unused letters in the word:
 
-If found → present
-If not → absent
+If found > present
+If not > absent
 
 This ensures accurate handling of duplicate letters.
 
@@ -42,14 +40,17 @@ Evaluate each guess and return feedback
 End the game when:
 The word is guessed correctly, or
 The player runs out of attempts
-File Structure
+
+
+## File Structure
 
 wordle/
 >-- wordGame.py
->-- wordList.txt
+>-- valid_words.txt
+>-- answers.txt
 >-- README.md
 
-wordList.txt Format
+## Word List Format
 
 The word list must follow these rules:
 

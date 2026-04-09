@@ -63,12 +63,13 @@ def render_board(guesses, results):
 
 
 
-# 
+# Updates the used letters on the keyboard
 def update_keyboard(keyboard, guess, result):
     for i in range(len(guess)):
         letter = guess[i]
         status = result[i]
 
+        # Applies the correct state to the keys
         if letter not in keyboard:
             keyboard[letter] = status
         elif status == "correct":
@@ -77,6 +78,8 @@ def update_keyboard(keyboard, guess, result):
             keyboard[letter] = "present"
 
 
+
+# Show the keyboard
 def render_keyboard(keyboard):
     rows = ["QWERTYUIOP", "ASDFGHJKL", "ZXCVBNM"]
 
@@ -85,6 +88,7 @@ def render_keyboard(keyboard):
         for letter in row:
             style = keyboard.get(letter, "")
 
+            # Applies the correct color to the keys
             if style:
                 line.append(f"[{style}] {letter} [/{style}]")
             else:
@@ -145,6 +149,7 @@ while attempt < attempts:
     guesses.append(guess)
     results.append(result)
 
+    # Print the ui to the console
     console.clear()
     console.print()
     render_board(guesses, results)
