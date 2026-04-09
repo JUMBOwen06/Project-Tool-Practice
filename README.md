@@ -6,7 +6,7 @@ Projects that I used to help me learn Python Libraries
 
     - SQLite + SQLAlchemy - Book Management App
 
-    - Rich - Wordle clone
+    - Rich - Wordle clone **(In progress)**
 
     - Typer - To-Do List App
 
