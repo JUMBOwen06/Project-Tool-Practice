@@ -1,18 +1,26 @@
-# Project-Tool-Practice
-Projects that I used to help me learn Python Libraries
+# Project Tool Practice
 
+A collection of small Python projects built to learn core libraries before integrating them into Stockr.
 
-## Project List
+## Projects
 
-    - SQLite + SQLAlchemy - Book Management App
+| Project | Library | Status |
+|---|---|---|
+| Book Management App | SQLite + SQLAlchemy | In Progress |
+| Wordle Clone | Rich | Complete |
+| To-Do List App | Typer | In Progress |
 
-    - Rich - Wordle clone **(In progress)**
+## Purpose
 
-    - Typer - To-Do List App
+Each project is scoped specifically to practice one library at a time. The goal is to get comfortable with the full stack — SQLite + SQLAlchemy, Rich, and Typer — before bringing them together in **Stockr**, a store inventory management system.
 
+## Tech Stack
 
-These projects are important as they will give me practice before I 
-    implement them into my Stockr app.
+- **Python** — core language
+- **SQLite + SQLAlchemy** — database and ORM
+- **Rich** — terminal UI and formatting
+- **Typer** — CLI interface
 
 ## Author
-Owen Fugger
+
+**Owen Fugger**
