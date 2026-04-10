@@ -165,5 +165,3 @@ while attempt < attempts:
 
 else:
     print("You lose! The word was:", word)
-
-

@@ -7,6 +7,8 @@ This project is part of a series of smaller exercises designed to learn new Pyth
 libraries and strengthen programming fundamentals before integrating them into
 larger applications.
 
+This project focuses on using the RICH library
+
 ## Features
 Random word selection from a text file
 6 attempts to guess the correct word
@@ -33,8 +35,8 @@ If not > absent
 This ensures accurate handling of duplicate letters.
 
 ## How It Works
-Load a list of words from wordList.txt
-Randomly select a word as the answer
+Load a list of valid words users can guess from, from valid_words.txt   (3664 words)
+Randomly select a word as the answer from answer.txt    (589 words)
 Prompt the user to enter guesses
 Evaluate each guess and return feedback
 End the game when:
@@ -45,10 +47,10 @@ The player runs out of attempts
 ## File Structure
 
 wordle/
->-- wordGame.py
->-- valid_words.txt
->-- answers.txt
->-- README.md
+    >-- wordGame.py
+    >-- valid_words.txt
+    >-- answers.txt
+    >-- README.md
 
 ## Word List Format
 
